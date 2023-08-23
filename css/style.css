@@ -1,0 +1,6 @@
+.banner {
+    background-image: url("/bgImage/bg11.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}

@@ -1,19 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="winter">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <!-- tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="px-4">
     <header>
-
+        <div class="navbar bg-base-200 bg-info text-pink-400 font-bold ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                </div>
+                <a class="btn btn-ghost normal-case text-2xl">Simple Shop</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-pink-400 text-xl">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-pink-400">Button</a>
+            </div>
+        </div>
     </header>
+    <!-- Main section  -->
+    <main>
+        <!-- banner section  -->
+        <section class="banner">
+            <h1></h1>
+        </section>
+
+        <!-- all products -->
+        <section>
+            <!-- search field  -->
+            <div class="form-control w-full max-w-xs mx-auto mb-4">
+                <label class="label">
+                    <span class="label-text text-xl text-pink-600 font-extrabold">Serach Your
+                        Product</span>
+                    <span class="label-text-alt text-xl text-pink-600">press Enter</span>
+                </label>
+                <input type="text" placeholder="type here" class="input input-bordered w-full max-w-xs" />
+            </div>
+        </section>
+        <!-- show product  -->
+        <section>
+            <div class="flex">
+                <div class="flex-none h-14">
+                    <ul id="menu-item" class="menu bg-base-200 bg-info rounded-box">
+
+                    </ul>
+                </div>
+                <div class="grow h-14">
+                    02
+                </div>
+                <div class="flex-none w-14 h-14">
+                    03
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- js connected -->
     <script src="js/app.js"></script>
 </body>
