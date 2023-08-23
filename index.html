@@ -11,9 +11,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="px-4">
-    <header>
-        <div class="navbar bg-base-200 bg-info text-pink-400 font-bold ">
+<body class="px-4 mb-10">
+    <header class="banner">
+        <div class="navbar bg-base-200  text-pink-400 font-bold ">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -41,9 +41,9 @@
     <!-- Main section  -->
     <main>
         <!-- banner section  -->
-        <section class="banner">
+        <!-- <section class="banner">
             <h1></h1>
-        </section>
+        </section> -->
 
         <!-- all products -->
         <section>
@@ -54,23 +54,41 @@
                         Product</span>
                     <span class="label-text-alt text-xl text-pink-600">press Enter</span>
                 </label>
-                <input type="text" placeholder="type here" class="input input-bordered w-full max-w-xs" />
+                <input id="search-field" type="text" placeholder="type here"
+                    class="input input-bordered w-full max-w-xs" />
             </div>
         </section>
+        <!-- show the result ,when the products is empty -->
+        <section id="not-found">
+
+        </section>
+
         <!-- show product  -->
         <section>
             <div class="flex">
-                <div class="flex-none h-14">
+                <div class="flex-none ">
                     <ul id="menu-item" class="menu bg-base-200 bg-info rounded-box">
 
                     </ul>
                 </div>
-                <div class="grow h-14">
-                    02
+                <div id="products-container" class="grow grid grid-cols-3 gap-4">
+
                 </div>
-                <div class="flex-none w-14 h-14">
-                    03
-                </div>
+            </div>
+        </section>
+        <!-- Modal  -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal" id="modal-detail">
+                <!-- <div class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">This modal works with a hidden checkbox!</p>
+                    <div class="modal-action">
+                        <label for="my_modal_6" class="btn">Close!</label>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
